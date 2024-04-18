@@ -1,0 +1,76 @@
+<!--
+
+    Project Name: D&D Dice Roller
+    Project Description: This app allows the user to select what dice to roll and how many dice to roll and randomly "rolls" thos dice.
+    Date Started: 2024-03-13
+    Date Finished: 
+    
+    -------------------------------------------------------------------------------------------------------------------------------
+
+    Developer Name: Nick McClure
+    Portfolio / Personal Site: https://n-mcclure.github.io/
+    GitHub: https://github.com/N-McClure
+    LinkedIn: https://www.linkedin.com/in/nick-mcclure-578565295/
+    YouTube: https://www.youtube.com/@NickMcClure_ProgrammingGuy
+    Blog: https://n-mcclure004.livejournal.com/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>D&D Dice Roller</title>
+</head>
+<body>
+
+    <!--
+         Note: Types of Dice in D&D. 
+        - d4
+        - d6
+        - d8
+        - d10
+        - d12
+        - d20
+
+        List of App Features:
+        - User can select the number of dice to roll (text input).
+        - User can select which dice type to roll (dropdown menu).
+        - App will display the dice faces to show the "roll result" on the screen.
+        - App will calculate the roll totals.
+        - clean and sleek UI.
+        - Desktop and Mobile Compatible Front-End.
+    -->
+
+    <!-- Connection to External CSS File: -->
+    <link rel="stylesheet" href="style.css">
+
+    <div class="wrapping">
+
+        <!-- Div for inputs: -->
+        <div class="inputs">
+            <label>Number of Dice to Roll: </label>
+            <input type="number" required id="numberInput" required placeholder="Enter amount to roll.">
+            <br>
+            <div class="diceOptions">
+                <label>Type of Dice to Roll: </label>
+                <select>
+                    <option value="d4">Four Sided Die (d4)</option>
+                    <option value="d6">Six Sided Die (d6)</option>
+                    <option value="d8">Eight Sided Die (d8)</option>
+                    <option value="d10">Ten Sided Die (d10)</option>
+                    <option value="d12">Twelve Sided Die (d12)</option>
+                    <option value="d20">Twenty Sided Die (d20)</option>
+                </select>
+            </div>
+            <!-- Button to Roll selected Dice: -->
+        <button type="submit" class="rollButton" onclick="rollManyDice()">ROLL DICE</button>
+        </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+    
+</body>
+</html>
